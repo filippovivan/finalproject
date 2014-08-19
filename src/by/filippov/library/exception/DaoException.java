@@ -1,18 +1,18 @@
-package by.filippov.library.exceptions;
+package by.filippov.library.exception;
 
-public class DAOException extends Exception {
+public class DaoException extends Exception {
 
 	private static final long serialVersionUID = 1L;
 
-	public DAOException(String arg0, Throwable arg1) {
+	public DaoException(String arg0, Throwable arg1) {
 		super(arg0, arg1);
 	}
 
-	public DAOException(String message) {
+	public DaoException(String message) {
 		super(message);
 	}
 
-	public DAOException(Throwable cause) {
+	public DaoException(Throwable cause) {
 		super(cause);
 	}
 

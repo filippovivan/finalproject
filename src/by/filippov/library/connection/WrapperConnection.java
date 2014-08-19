@@ -19,12 +19,19 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.Executor;
 
-public class WrapperConnection implements Connection {
+public class WrapperConnection implements Connection, AutoCloseable {
 
 	private Connection connection;
 
 	WrapperConnection(Connection connection) {
 		this.connection = connection;
+	}
+
+	/**
+	 * Returns connection to pool
+	 */
+	public void close() {
+		ConnectionPool.getInstance().returnConnection(this);
 	}
 
 	public void abort(Executor executor) throws SQLException {
@@ -33,10 +40,6 @@ public class WrapperConnection implements Connection {
 
 	public void clearWarnings() throws SQLException {
 		connection.clearWarnings();
-	}
-
-	public void close() throws SQLException {
-		connection.close();
 	}
 
 	public void commit() throws SQLException {

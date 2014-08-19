@@ -1,0 +1,29 @@
+#header {
+	height: 50px; /* высота шапки */
+	background: #fc0; /* фон */
+	vertical-align: top;
+	clear: none;
+}
+
+h1 {
+	vertical-align: middle;
+	text-align: center;
+	color: #AAA;
+	font-style: italic;
+	text-align: center;
+}
+
+#control {
+	vertical-align: middle;
+	float: right;
+	width: 25%;
+	text-align: right;
+	padding-right: 3%;
+	float: right;
+	height: 50px;
+}
+
+#caption {
+	height: 50px;
+	padding-left: 25%;
+}

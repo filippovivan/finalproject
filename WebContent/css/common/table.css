@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+
+table {
+	width: 96%;
+	margin: 2%;
+	border-color: blue;
+	border-style: solid;
+	border-width: 1px;
+	vertical-align: middle;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+td, th {
+	border-width: 1px;
+	border-style: solid;
+	border-color: blue;
+	text-align: center;
+}
+
+hover:tr {
+	background-color: #DFF;
+}

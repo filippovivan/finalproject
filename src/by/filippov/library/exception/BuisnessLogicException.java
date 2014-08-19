@@ -1,18 +1,18 @@
-package by.filippov.library.exceptions;
+package by.filippov.library.exception;
 
-public class LogicalException extends Exception {
+public class BuisnessLogicException extends Exception {
 
 	private static final long serialVersionUID = 1L;
 
-	public LogicalException(String message, Throwable cause) {
+	public BuisnessLogicException(String message, Throwable cause) {
 		super(message, cause);
 	}
 
-	public LogicalException(String message) {
+	public BuisnessLogicException(String message) {
 		super(message);
 	}
 
-	public LogicalException(Throwable cause) {
+	public BuisnessLogicException(Throwable cause) {
 		super(cause);
 	}
 

@@ -1,4 +1,4 @@
-package by.filippov.library.commands;
+package by.filippov.library.command;
 
 import by.filippov.library.controller.RequestContent;
 
